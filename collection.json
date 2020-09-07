@@ -1,0 +1,681 @@
+{
+    "info": {
+        "_postman_id": "56975ea7-7216-4c04-8aab-e9a81e1231a5",
+        "name": "Bulksign",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [{
+            "name": "GetVersion",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{path}}/restapi/GetVersion",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetVersion"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetVersion",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                    "raw": "{{path}}/restapi/GetVersion",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetVersion"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetContacts",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetContacts",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetContacts"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "AddContact",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "type": "text",
+                    "value": "{{api_email}};{{api_key}}"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"Name\":\"Text Contact\",\r\n    \"Email\": \"test@test.com\",\r\n    \"PhoneNumber\":\"\",\r\n    \"Addresss\" : \"\",\r\n    \"Company\" : \"Comp Inc\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{path}}/restapi/AddContact",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "AddContact"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetTemplatesCount",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetTemplatesCount",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetTemplatesCount"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetTemplateDetails",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetTemplatesDetails?templatePublicId",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetTemplatesDetails"
+                    ],
+                    "query": [{
+                        "key": "templatePublicId",
+                        "value": null
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetBundleDetails",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetBundleDetails?bundlePublicId",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetBundleDetails"
+                    ],
+                    "query": [{
+                        "key": "bundlePublicId",
+                        "value": null
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetTemplates",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetTemplates",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetTemplates"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetDraftsCount",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetDraftsCount",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetDraftsCount"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetDrafts",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "type": "text",
+                    "value": "{{api_email}};{{api_key}}"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetDrafts",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetDrafts"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetDraftDetails",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetDraftDetails?draftPublicId",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetDraftDetails"
+                    ],
+                    "query": [{
+                        "key": "draftPublicId",
+                        "value": null
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetBundleStatus",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetBundleStatus?bundlePublicId",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetBundleStatus"
+                    ],
+                    "query": [{
+                        "key": "bundlePublicId",
+                        "value": null
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetBundlesByStatus",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetBundlesByStatus?status",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetBundleByStatus"
+                    ],
+                    "query": [{
+                        "key": "status",
+                        "value": 2
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetBundlesToSign",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetBundlesToSign",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetBundlesToSign"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "DeleteBundle",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "type": "text",
+                    "value": "{{api_email}};{{api_key}}"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/DeleteBundle?bundlePublicId",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "DeleteBundle"
+                    ],
+                    "query": [{
+                        "key": "bundlePublicId",
+                        "value": null
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "CancelBundle",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "type": "text",
+                    "value": "{{api_email}};{{api_key}}"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/CancelBundle?bundlePublicId",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "CancelBundle"
+                    ],
+                    "query": [{
+                        "key": "bundlePublicId",
+                        "value": null
+                    }]
+                }
+            },
+            "response": []
+        },
+
+        {
+            "name": "GetCompletedDocuments",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "your_email_address;your_api_key",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetCompletedDocuments?bundlePublicId",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetCompletedDocuments"
+                    ],
+                    "query": [{
+                        "key": "bundlePublicId",
+                        "value": null
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetSignatureImprints",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetSignatureImprints",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetSignatureImprints"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetUserAutomaticSigningProfiles",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetSignatureImprints",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetUserAutomaticSigningProfiles"
+                    ]
+                }
+            },
+            "response": []
+        },
+
+        {
+            "name": "GetOrganizationAutomaticSigningProfiles",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetOrganizationAutomaticSigningProfiles",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetOrganizationAutomaticSigningProfiles"
+                    ]
+                }
+            },
+            "response": []
+        },
+
+
+
+        {
+            "name": "CreateDraftFromFileBase64",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "type": "text",
+                    "value": "{{api_email}};{{api_key}}"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/CreateDraftFromFileBase64",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "CreateDraftFromFileBase64"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "CreateDraftFromFile",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "type": "text",
+                    "value": "{{api_email}};{{api_key}}"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/CreateDraftFromFile",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "CreateDraftFromFile"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "AnalyzeFileBase64",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "type": "text",
+                    "value": "{{api_email}};{{api_key}}"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/AnalyzeFileBase64",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "AnalyzeFileBase64"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "AnalyzeFile",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "type": "text",
+                    "value": "{{api_email}};{{api_key}}"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/AnalyzeFile",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "AnalyzeFile"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "InviteUserToOrganization",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "type": "text",
+                    "value": "{{api_email}};{{api_key}}"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n\r\n    \"FirstName\" : \"A\",\r\n    \"LastName\" : \"B\",\r\n    \"Email\": \"Test+22@test.com\",\r\n    \"IsAdministrator\" : true\r\n\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{path}}/restapi/InviteUserToOrganization",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "InviteUserToOrganization"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ],
+    "variable": [{
+            "id": "e99e36cb-940d-46a2-8731-a15eaad2e57d",
+            "key": "hostname",
+            "value": "bulksign.com"
+        },
+        {
+            "id": "119e36cb-940d-46a2-8731-a15eaad2e112",
+            "key": "path",
+            "value": "webapi"
+        }, {
+            "id": "a22e36cb-940d-88a2-1234-a15eaad21234",
+            "key": "protocol",
+            "value": "https"
+        },
+        {
+            "id": "b22e36cb-940d-46a2-8731-a15eaad21234",
+            "key": "api_key",
+            "value": "1234567890"
+        },
+        {
+            "id": "122e36ab-940d-46a2-8731-a15eaad21234",
+            "key": "api_email",
+            "value": "test@test.com"
+        }
+    ],
+    "protocolProfileBehavior": {}
+}

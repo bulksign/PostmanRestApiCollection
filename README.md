@@ -30,7 +30,7 @@ Modify the variables according to the Bulksign instance for which you want to do
 
 **api_key** : set the Bulksign API key 
 
-**api_email** : set the email address of the Bulksign user
+**api_email** : set the email address of the Bulksign user (if you want to authenticate with a personal or global token, leave the value for this field empty)
 
 
 * Run the requests

@@ -154,7 +154,7 @@
             "response": []
         },
         {
-            "name": "GetBundleDetails",
+            "name": "GetEnvelopeDetails",
             "request": {
                 "method": "POST",
                 "header": [{
@@ -163,7 +163,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetBundleDetails?bundlePublicId",
+                    "raw": "{{path}}/restapi/GetEnvelopeDetails?envelopeId",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -171,10 +171,10 @@
                     "path": [
                         "{{path}}",
                         "restapi",
-                        "GetBundleDetails"
+                        "GetEnvelopeDetails"
                     ],
                     "query": [{
-                        "key": "bundlePublicId",
+                        "key": "envelopeId",
                         "value": null
                     }]
                 }
@@ -263,7 +263,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetDraftDetails?draftPublicId",
+                    "raw": "{{path}}/restapi/GetDraftDetails?draftId",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -274,7 +274,7 @@
                         "GetDraftDetails"
                     ],
                     "query": [{
-                        "key": "draftPublicId",
+                        "key": "draftId",
                         "value": null
                     }]
                 }
@@ -282,7 +282,7 @@
             "response": []
         },
         {
-            "name": "GetBundleStatus",
+            "name": "GetEnvelopeStatus",
             "request": {
                 "method": "POST",
                 "header": [{
@@ -291,7 +291,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetBundleStatus?bundlePublicId",
+                    "raw": "{{path}}/restapi/GetEnvelopeStatus?envelopeId",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -299,10 +299,10 @@
                     "path": [
                         "{{path}}",
                         "restapi",
-                        "GetBundleStatus"
+                        "GetEnvelopeStatus"
                     ],
                     "query": [{
-                        "key": "bundlePublicId",
+                        "key": "envelopeId",
                         "value": null
                     }]
                 }
@@ -310,7 +310,7 @@
             "response": []
         },
         {
-            "name": "GetBundlesByStatus",
+            "name": "GetEnvelopesByStatus",
             "request": {
                 "method": "POST",
                 "header": [{
@@ -319,7 +319,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetBundlesByStatus?status",
+                    "raw": "{{path}}/restapi/GetEnvelopesByStatus?status",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -327,7 +327,7 @@
                     "path": [
                         "{{path}}",
                         "restapi",
-                        "GetBundleByStatus"
+                        "GetEnvelopesByStatus"
                     ],
                     "query": [{
                         "key": "status",
@@ -338,7 +338,7 @@
             "response": []
         },
         {
-            "name": "GetBundlesToSign",
+            "name": "GetEnvelopesToSign",
             "request": {
                 "method": "POST",
                 "header": [{
@@ -347,7 +347,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetBundlesToSign",
+                    "raw": "{{path}}/restapi/GetEnvelopesToSign",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -355,14 +355,14 @@
                     "path": [
                         "{{path}}",
                         "restapi",
-                        "GetBundlesToSign"
+                        "GetEnvelopesToSign"
                     ]
                 }
             },
             "response": []
         },
         {
-            "name": "DeleteBundle",
+            "name": "DeleteEnvelope",
             "request": {
                 "method": "POST",
                 "header": [{
@@ -371,7 +371,7 @@
                     "value": "{{api_email}};{{api_key}}"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/DeleteBundle?bundlePublicId",
+                    "raw": "{{path}}/restapi/DeleteEnvelope?envelopeId",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -382,7 +382,7 @@
                         "DeleteBundle"
                     ],
                     "query": [{
-                        "key": "bundlePublicId",
+                        "key": "envelopeId",
                         "value": null
                     }]
                 }
@@ -390,7 +390,7 @@
             "response": []
         },
         {
-            "name": "CancelBundle",
+            "name": "CancelEnvelope",
             "request": {
                 "method": "POST",
                 "header": [{
@@ -399,7 +399,7 @@
                     "value": "{{api_email}};{{api_key}}"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/CancelBundle?bundlePublicId",
+                    "raw": "{{path}}/restapi/CancelEnvelope?envelopeId",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -410,7 +410,7 @@
                         "CancelBundle"
                     ],
                     "query": [{
-                        "key": "bundlePublicId",
+                        "key": "envelopeId",
                         "value": null
                     }]
                 }
@@ -419,7 +419,7 @@
         },
 
         {
-            "name": "GetCompletedDocuments",
+            "name": "DownloadEnvelopeCompletedDocuments",
             "request": {
                 "method": "POST",
                 "header": [{
@@ -428,7 +428,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetCompletedDocuments?bundlePublicId",
+                    "raw": "{{path}}/restapi/DownloadEnvelopeCompletedDocuments?envelopeId",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -436,10 +436,10 @@
                     "path": [
                         "{{path}}",
                         "restapi",
-                        "GetCompletedDocuments"
+                        "DownloadEnvelopeCompletedDocuments"
                     ],
                     "query": [{
-                        "key": "bundlePublicId",
+                        "key": "envelopeId",
                         "value": null
                     }]
                 }
@@ -519,9 +519,6 @@
             },
             "response": []
         },
-
-
-
         {
             "name": "CreateDraftFromFileBase64",
             "request": {

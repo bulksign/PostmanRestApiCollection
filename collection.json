@@ -126,6 +126,34 @@
             "response": []
         },
         {
+            "name": "GetCompletedFormFields",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetCompletedFormFields?envelopeId",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetCompletedFormFields"
+                    ],
+                    "query": [{
+                        "key": "envelopeId",
+                        "value": null
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
             "name": "GetTemplateDetails",
             "request": {
                 "method": "POST",
@@ -135,7 +163,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetTemplatesDetails?templatePublicId",
+                    "raw": "{{path}}/restapi/GetTemplatesDetails?templateId",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -146,7 +174,7 @@
                         "GetTemplatesDetails"
                     ],
                     "query": [{
-                        "key": "templatePublicId",
+                        "key": "templateId",
                         "value": null
                     }]
                 }
@@ -379,7 +407,7 @@
                     "path": [
                         "{{path}}",
                         "restapi",
-                        "DeleteBundle"
+                        "DeleteEnvelope"
                     ],
                     "query": [{
                         "key": "envelopeId",
@@ -407,7 +435,7 @@
                     "path": [
                         "{{path}}",
                         "restapi",
-                        "CancelBundle"
+                        "CancelEnvelope"
                     ],
                     "query": [{
                         "key": "envelopeId",
@@ -424,7 +452,7 @@
                 "method": "POST",
                 "header": [{
                     "key": "X-Bulksign-Authentication",
-                    "value": "your_email_address;your_api_key",
+                    "value": "{{api_email}};{{api_key}}",
                     "type": "text"
                 }],
                 "url": {

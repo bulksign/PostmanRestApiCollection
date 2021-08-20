@@ -69,6 +69,78 @@
             "response": []
         },
         {
+            "name": "GetLicense",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetLicense",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetLicense"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetUserInterfaceLanguages",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetUserInterfaceLanguages",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetUserInterfaceLanguages"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "GetEmailLanguages",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetEmailLanguages",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetEmailLanguages"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
             "name": "AddContact",
             "request": {
                 "method": "POST",
@@ -126,6 +198,174 @@
             "response": []
         },
         {
+            "name": "SearchEnvelopes",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/SearchEnvelopes",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchEnvelopes"
+                    ],
+                    "query": [{
+                        "key": "searchTerm",
+                        "value": "test"
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "SearchTeamMembersEnvelopes",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/SearchTeamMembersEnvelopes",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchTeamMembersEnvelopes"
+                    ],
+                    "query": [{
+                        "key": "searchTerm",
+                        "value": "test"
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "SearchDrafts",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/SearchDrafts",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchDrafts"
+                    ],
+                    "query": [{
+                        "key": "searchTerm",
+                        "value": "test"
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "SearchTeamMembersDrafts",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/SearchTeamMembersDrafts",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchTeamMembersDrafts"
+                    ],
+                    "query": [{
+                        "key": "searchTerm",
+                        "value": "test"
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "SearchTeamMembersTemplates",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/SearchTeamMembersTemplates",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchTeamMembersTemplates"
+                    ],
+                    "query": [{
+                        "key": "searchTerm",
+                        "value": "test"
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "SearchTemplates",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/SearchTemplates",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchTemplates"
+                    ],
+                    "query": [{
+                        "key": "searchTerm",
+                        "value": "test"
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
             "name": "GetCompletedFormFields",
             "request": {
                 "method": "POST",
@@ -135,7 +375,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetCompletedFormFields?envelopeId",
+                    "raw": "{{path}}/restapi/GetCompletedFormFields",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -147,7 +387,7 @@
                     ],
                     "query": [{
                         "key": "envelopeId",
-                        "value": null
+                        "value": ""
                     }]
                 }
             },
@@ -163,7 +403,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetTemplatesDetails?templateId",
+                    "raw": "{{path}}/restapi/GetTemplatesDetails",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -175,7 +415,7 @@
                     ],
                     "query": [{
                         "key": "templateId",
-                        "value": null
+                        "value": ""
                     }]
                 }
             },
@@ -191,7 +431,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetEnvelopeDetails?envelopeId",
+                    "raw": "{{path}}/restapi/GetEnvelopeDetails",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -203,7 +443,7 @@
                     ],
                     "query": [{
                         "key": "envelopeId",
-                        "value": null
+                        "value": ""
                     }]
                 }
             },
@@ -291,7 +531,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetDraftDetails?draftId",
+                    "raw": "{{path}}/restapi/GetDraftDetails",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -303,7 +543,7 @@
                     ],
                     "query": [{
                         "key": "draftId",
-                        "value": null
+                        "value": ""
                     }]
                 }
             },
@@ -319,7 +559,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetEnvelopeStatus?envelopeId",
+                    "raw": "{{path}}/restapi/GetEnvelopeStatus",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -331,7 +571,7 @@
                     ],
                     "query": [{
                         "key": "envelopeId",
-                        "value": null
+                        "value": ""
                     }]
                 }
             },
@@ -347,7 +587,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/GetEnvelopesByStatus?status",
+                    "raw": "{{path}}/restapi/GetEnvelopesByStatus",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -399,7 +639,7 @@
                     "value": "{{api_email}};{{api_key}}"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/DeleteEnvelope?envelopeId",
+                    "raw": "{{path}}/restapi/DeleteEnvelope",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -411,7 +651,7 @@
                     ],
                     "query": [{
                         "key": "envelopeId",
-                        "value": null
+                        "value": ""
                     }]
                 }
             },
@@ -427,7 +667,7 @@
                     "value": "{{api_email}};{{api_key}}"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/CancelEnvelope?envelopeId",
+                    "raw": "{{path}}/restapi/CancelEnvelope",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -439,7 +679,7 @@
                     ],
                     "query": [{
                         "key": "envelopeId",
-                        "value": null
+                        "value": ""
                     }]
                 }
             },
@@ -456,7 +696,7 @@
                     "type": "text"
                 }],
                 "url": {
-                    "raw": "{{path}}/restapi/DownloadEnvelopeCompletedDocuments?envelopeId",
+                    "raw": "{{path}}/restapi/DownloadEnvelopeCompletedDocuments",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -468,7 +708,7 @@
                     ],
                     "query": [{
                         "key": "envelopeId",
-                        "value": null
+                        "value": ""
                     }]
                 }
             },

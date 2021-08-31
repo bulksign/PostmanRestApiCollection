@@ -198,6 +198,39 @@
             "response": []
         },
         {
+            "name": "AddSharedContact",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "type": "text",
+                    "value": "{{api_email}};{{api_key}}"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"Name\":\"Text Contact\",\r\n    \"Email\": \"test@test.com\",\r\n    \"PhoneNumber\":\"\",\r\n    \"Addresss\" : \"\",\r\n    \"Company\" : \"Comp Inc\"\r\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{path}}/restapi/AddSharedContact",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "AddSharedContact"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
             "name": "GetTemplatesCount",
             "request": {
                 "method": "POST",

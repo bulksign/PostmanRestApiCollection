@@ -69,6 +69,30 @@
             "response": []
         },
         {
+            "name": "GetSharedContacts",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "X-Bulksign-Authentication",
+                    "value": "{{api_email}};{{api_key}}",
+                    "type": "text"
+                }],
+                "url": {
+                    "raw": "{{path}}/restapi/GetSharedContacts",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetSharedContacts"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
             "name": "GetLicense",
             "request": {
                 "method": "POST",

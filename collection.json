@@ -192,6 +192,76 @@
             "response": []
         },
         {
+            "name": "SearchEnvelopes",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "X-Bulksign-Authentication",
+                        "value": "{{api_email}};{{api_key}}",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"SearchTerm\":\"test\", \"SearchEnvelopeStatus\":\"0\"}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{path}}/restapi/SearchEnvelopes",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchEnvelopes"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "UnlockConcurrentRecipient",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "X-Bulksign-Authentication",
+                        "value": "{{api_email}};{{api_key}}",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"EnvelopeId\":\"\", \"RecipientEmail\":\"\"}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "{{path}}/restapi/UnlockConcurrentRecipient",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "UnlockConcurrentRecipient"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
             "name": "GetContacts",
             "request": {
                 "method": "POST",

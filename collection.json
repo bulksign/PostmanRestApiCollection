@@ -944,6 +944,10 @@
                         "value": "{{api_email}};{{api_key}}"
                     }
                 ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "PDF_file_content_as_single_line_base64_String"
+                },
                 "url": {
                     "raw": "{{path}}/restapi/CreateDraftFromFileBase64",
                     "protocol": "{{protocol}}",
@@ -954,7 +958,11 @@
                         "{{path}}",
                         "restapi",
                         "CreateDraftFromFileBase64"
-                    ]
+                    ],
+                    "query": [{
+                        "key": "fileName",
+                        "value": "test.pdf"
+                    }]
                 }
             },
             "response": []
@@ -970,6 +978,9 @@
                         "value": "{{api_email}};{{api_key}}"
                     }
                 ],
+                "body": {
+                    "mode": "file"
+                },
                 "url": {
                     "raw": "{{path}}/restapi/CreateDraftFromFile",
                     "protocol": "{{protocol}}",
@@ -998,7 +1009,12 @@
                 ],
                 "body": {
                     "mode": "raw",
-                    "raw": "{\"Filename\":test.pdf, \"FileContentBase64\":PDF_file_content_as_single_line_base64_String}"
+                    "raw": "{\"Filename\":\"test.pdf\", \"FileContentBase64\":\"PDF_file_content_as_single_line_base64_String\"}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
                 },
                 "url": {
                     "raw": "{{path}}/restapi/AnalyzeFileBase64",

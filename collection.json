@@ -46,6 +46,152 @@
             "response": []
         },
         {
+            "name": "GetAuthenticationProviders",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "X-Bulksign-Authentication",
+                        "value": "{{api_email}};{{api_key}}",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "{{path}}/restapi/GetAuthenticationProviders",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetAuthenticationProviders"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "SearchDrafts",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "X-Bulksign-Authentication",
+                        "value": "{{api_email}};{{api_key}}",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "{{path}}/restapi/SearchDrafts",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchDrafts"
+                    ],
+                    "query": [{
+                        "key": "searchTerm",
+                        "value": ""
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "SearchTeamMembersEnvelopes",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "X-Bulksign-Authentication",
+                        "value": "{{api_email}};{{api_key}}",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "{{path}}/restapi/SearchTeamMembersEnvelopes",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchTeamMembersEnvelopes"
+                    ],
+                    "query": [{
+                        "key": "searchTerm",
+                        "value": ""
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "SearchTeamMembersTemplates",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "X-Bulksign-Authentication",
+                        "value": "{{api_email}};{{api_key}}",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "{{path}}/restapi/SearchTeamMembersTemplates",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchTeamMembersTemplates"
+                    ],
+                    "query": [{
+                        "key": "searchTerm",
+                        "value": ""
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "SearchTemplates",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "X-Bulksign-Authentication",
+                        "value": "{{api_email}};{{api_key}}",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "{{path}}/restapi/SearchTemplates",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "SearchTemplates"
+                    ],
+                    "query": [{
+                        "key": "searchTerm",
+                        "value": ""
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
             "name": "GetContacts",
             "request": {
                 "method": "POST",
@@ -1032,7 +1178,7 @@
             "response": []
         },
         {
-            "name": "AnalyzeFile",
+            "name": "AnalyzeFileInput",
             "request": {
                 "method": "POST",
                 "header": [

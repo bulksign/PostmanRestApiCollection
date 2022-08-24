@@ -366,6 +366,32 @@
             "response": []
         },
         {
+            "name": "GetCustomUserRoles",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "X-Bulksign-Authentication",
+                        "value": "{{api_email}};{{api_key}}",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "{{path}}/restapi/GetCustomUserRoles",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetCustomUserRoles"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
             "name": "GetEmailLanguages",
             "request": {
                 "method": "POST",

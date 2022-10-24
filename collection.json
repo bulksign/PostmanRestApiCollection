@@ -72,6 +72,32 @@
             "response": []
         },
         {
+            "name": "GetUserDetails",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "X-Bulksign-Authentication",
+                        "value": "{{api_email}};{{api_key}}",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "{{path}}/restapi/GetUserDetails",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "restapi",
+                        "GetUserDetails"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
             "name": "SearchDrafts",
             "request": {
                 "method": "POST",

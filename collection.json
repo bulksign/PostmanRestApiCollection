@@ -11,14 +11,14 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                    "raw": "{{path}}/restapi/GetVersion",
+                    "raw": "{{path}}/rest/GetVersion",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetVersion"
                     ]
                 }
@@ -31,14 +31,14 @@
                 "method": "POST",
                 "header": [],
                 "url": {
-                    "raw": "{{path}}/restapi/GetVersion",
+                    "raw": "{{path}}/rest/GetVersion",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetVersion"
                     ]
                 }
@@ -57,14 +57,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetAuthenticationProviders",
+                    "raw": "{{path}}/rest/GetAuthenticationProviders",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetAuthenticationProviders"
                     ]
                 }
@@ -83,14 +83,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetUserDetails",
+                    "raw": "{{path}}/rest/GetUserDetails",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetUserDetails"
                     ]
                 }
@@ -109,14 +109,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/SearchDrafts",
+                    "raw": "{{path}}/rest/SearchDrafts",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchDrafts"
                     ],
                     "query": [{
@@ -139,14 +139,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/SearchTeamMembersEnvelopes",
+                    "raw": "{{path}}/rest/SearchTeamMembersEnvelopes",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchTeamMembersEnvelopes"
                     ],
                     "query": [{
@@ -169,14 +169,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/SearchTeamMembersTemplates",
+                    "raw": "{{path}}/rest/SearchTeamMembersTemplates",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchTeamMembersTemplates"
                     ],
                     "query": [{
@@ -199,14 +199,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/SearchTemplates",
+                    "raw": "{{path}}/rest/SearchTemplates",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchTemplates"
                     ],
                     "query": [{
@@ -238,14 +238,14 @@
                     }
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/SearchEnvelopes",
+                    "raw": "{{path}}/rest/SearchEnvelopes",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchEnvelopes"
                     ]
                 }
@@ -273,14 +273,14 @@
                     }
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/UnlockConcurrentRecipient",
+                    "raw": "{{path}}/rest/UnlockConcurrentRecipient",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "UnlockConcurrentRecipient"
                     ]
                 }
@@ -299,14 +299,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetContacts",
+                    "raw": "{{path}}/rest/GetContacts",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetContacts"
                     ]
                 }
@@ -325,14 +325,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetSharedContacts",
+                    "raw": "{{path}}/rest/GetSharedContacts",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetSharedContacts"
                     ]
                 }
@@ -351,14 +351,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetLicense",
+                    "raw": "{{path}}/rest/GetLicense",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetLicense"
                     ]
                 }
@@ -377,14 +377,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetUserInterfaceLanguages",
+                    "raw": "{{path}}/rest/GetUserInterfaceLanguages",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetUserInterfaceLanguages"
                     ]
                 }
@@ -403,14 +403,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetCustomUserRoles",
+                    "raw": "{{path}}/rest/GetCustomUserRoles",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetCustomUserRoles"
                     ]
                 }
@@ -429,14 +429,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetEmailLanguages",
+                    "raw": "{{path}}/rest/GetEmailLanguages",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetEmailLanguages"
                     ]
                 }
@@ -464,14 +464,14 @@
                     }
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/AddContact",
+                    "raw": "{{path}}/rest/AddContact",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "AddContact"
                     ]
                 }
@@ -499,14 +499,14 @@
                     }
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/AddSharedContact",
+                    "raw": "{{path}}/rest/AddSharedContact",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "AddSharedContact"
                     ]
                 }
@@ -525,14 +525,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetTemplatesCount",
+                    "raw": "{{path}}/rest/GetTemplatesCount",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetTemplatesCount"
                     ]
                 }
@@ -551,14 +551,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/SearchEnvelopes",
+                    "raw": "{{path}}/rest/SearchEnvelopes",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchEnvelopes"
                     ],
                     "query": [
@@ -583,14 +583,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/SearchTeamMembersEnvelopes",
+                    "raw": "{{path}}/rest/SearchTeamMembersEnvelopes",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchTeamMembersEnvelopes"
                     ],
                     "query": [
@@ -615,14 +615,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/SearchDrafts",
+                    "raw": "{{path}}/rest/SearchDrafts",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchDrafts"
                     ],
                     "query": [
@@ -647,14 +647,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/SearchTeamMembersDrafts",
+                    "raw": "{{path}}/rest/SearchTeamMembersDrafts",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchTeamMembersDrafts"
                     ],
                     "query": [
@@ -679,14 +679,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/SearchTeamMembersTemplates",
+                    "raw": "{{path}}/rest/SearchTeamMembersTemplates",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchTeamMembersTemplates"
                     ],
                     "query": [
@@ -711,14 +711,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/SearchTemplates",
+                    "raw": "{{path}}/rest/SearchTemplates",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SearchTemplates"
                     ],
                     "query": [
@@ -743,14 +743,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetCompletedFormFields",
+                    "raw": "{{path}}/rest/GetCompletedFormFields",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetCompletedFormFields"
                     ],
                     "query": [
@@ -775,14 +775,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetTemplatesDetails",
+                    "raw": "{{path}}/rest/GetTemplatesDetails",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetTemplatesDetails"
                     ],
                     "query": [
@@ -807,14 +807,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetEnvelopeDetails",
+                    "raw": "{{path}}/rest/GetEnvelopeDetails",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetEnvelopeDetails"
                     ],
                     "query": [
@@ -839,14 +839,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetTemplates",
+                    "raw": "{{path}}/rest/GetTemplates",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetTemplates"
                     ]
                 }
@@ -865,14 +865,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetDraftsCount",
+                    "raw": "{{path}}/rest/GetDraftsCount",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetDraftsCount"
                     ]
                 }
@@ -891,14 +891,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetDrafts",
+                    "raw": "{{path}}/rest/GetDrafts",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetDrafts"
                     ]
                 }
@@ -917,14 +917,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetDraftDetails",
+                    "raw": "{{path}}/rest/GetDraftDetails",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetDraftDetails"
                     ],
                     "query": [
@@ -949,14 +949,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetEnvelopeStatus",
+                    "raw": "{{path}}/rest/GetEnvelopeStatus",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetEnvelopeStatus"
                     ],
                     "query": [
@@ -981,14 +981,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetEnvelopesByStatus",
+                    "raw": "{{path}}/rest/GetEnvelopesByStatus",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetEnvelopesByStatus"
                     ],
                     "query": [
@@ -1013,14 +1013,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetEnvelopesToSign",
+                    "raw": "{{path}}/rest/GetEnvelopesToSign",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetEnvelopesToSign"
                     ]
                 }
@@ -1039,14 +1039,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/DeleteEnvelope",
+                    "raw": "{{path}}/rest/DeleteEnvelope",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "DeleteEnvelope"
                     ],
                     "query": [
@@ -1071,14 +1071,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/CancelEnvelope",
+                    "raw": "{{path}}/rest/CancelEnvelope",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "CancelEnvelope"
                     ],
                     "query": [
@@ -1103,14 +1103,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/DownloadEnvelopeCompletedDocuments",
+                    "raw": "{{path}}/rest/DownloadEnvelopeCompletedDocuments",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "DownloadEnvelopeCompletedDocuments"
                     ],
                     "query": [
@@ -1135,14 +1135,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetSignatureImprints",
+                    "raw": "{{path}}/rest/GetSignatureImprints",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetSignatureImprints"
                     ]
                 }
@@ -1161,14 +1161,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetSignatureStamps",
+                    "raw": "{{path}}/rest/GetSignatureStamps",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetSignatureStamps"
                     ]
                 }
@@ -1187,14 +1187,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetSignatureImprints",
+                    "raw": "{{path}}/rest/GetSignatureImprints",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetUserAutomaticSigningProfiles"
                     ]
                 }
@@ -1213,14 +1213,14 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/restapi/GetOrganizationAutomaticSigningProfiles",
+                    "raw": "{{path}}/rest/GetOrganizationAutomaticSigningProfiles",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "GetOrganizationAutomaticSigningProfiles"
                     ]
                 }
@@ -1243,14 +1243,14 @@
                     "raw": "PDF_file_content_as_single_line_base64_String"
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/CreateDraftFromFileBase64",
+                    "raw": "{{path}}/rest/CreateDraftFromFileBase64",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "CreateDraftFromFileBase64"
                     ],
                     "query": [{
@@ -1276,14 +1276,14 @@
                     "mode": "file"
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/CreateDraftFromFile",
+                    "raw": "{{path}}/rest/CreateDraftFromFile",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "CreateDraftFromFile"
                     ]
                 }
@@ -1311,14 +1311,14 @@
                     }
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/AnalyzeFileBase64",
+                    "raw": "{{path}}/rest/AnalyzeFileBase64",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "AnalyzeFileBase64"
                     ]
                 }
@@ -1340,14 +1340,14 @@
                     "mode": "file"
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/AnalyzeFile",
+                    "raw": "{{path}}/rest/AnalyzeFile",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "AnalyzeFileBinary"
                     ],
                     "query": [
@@ -1375,14 +1375,14 @@
                     "mode": "file"
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/StoreTemporaryFileBinary",
+                    "raw": "{{path}}/rest/StoreTemporaryFileBinary",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "StoreTemporaryFileBinary"
                     ],
                     "query": [
@@ -1416,14 +1416,14 @@
                     }
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/StoreTemporaryFileBase64",
+                    "raw": "{{path}}/rest/StoreTemporaryFileBase64",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "StoreTemporaryFileBase64"
                     ]
                 }
@@ -1451,14 +1451,14 @@
                     }
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/InviteUserToOrganization",
+                    "raw": "{{path}}/rest/InviteUserToOrganization",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "InviteUserToOrganization"
                     ]
                 }
@@ -1486,14 +1486,14 @@
                     }
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/SendEnvelope",
+                    "raw": "{{path}}/rest/SendEnvelope",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "SendEnvelope"
                     ]
                 }
@@ -1521,14 +1521,14 @@
                     }
                 },
                 "url": {
-                    "raw": "{{path}}/restapi/PrepareSendEnvelope",
+                    "raw": "{{path}}/rest/PrepareSendEnvelope",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
                     ],
                     "path": [
                         "{{path}}",
-                        "restapi",
+                        "rest",
                         "PrepareSendEnvelope"
                     ]
                 }

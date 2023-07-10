@@ -775,7 +775,7 @@
                     }
                 ],
                 "url": {
-                    "raw": "{{path}}/rest/GetTemplatesDetails",
+                    "raw": "{{path}}/rest/GetTemplateDetails",
                     "protocol": "{{protocol}}",
                     "host": [
                         "{{hostname}}"
@@ -783,7 +783,7 @@
                     "path": [
                         "{{path}}",
                         "rest",
-                        "GetTemplatesDetails"
+                        "GetTemplateDetails"
                     ],
                     "query": [
                         {

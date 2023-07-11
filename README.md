@@ -6,7 +6,7 @@
 
 * clone this repository
 
-* install <a href="https://www.postman.com/">Postman</a> and run it
+* install <a href="https://www.postman.com/">Postman</a> (or any other REST tool that allows you to import collections) and run it
 
 * File\Import\Upload Files and choose the "collection.json" obtained from this repository. Confirm the import.
 
@@ -30,7 +30,7 @@ Modify the variables according to the Bulksign instance for which you want to do
 
 **api_key** : set the Bulksign API key 
 
-**api_email** : set the email address of the Bulksign user (if you want to authenticate with a personal or global token, leave the value for this field empty)
+**api_email** : set the email address of the Bulksign user (if you want to authenticate with a personal or global token leave the value for this field empty)
 
 
 * Run the requests

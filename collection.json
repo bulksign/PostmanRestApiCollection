@@ -98,6 +98,36 @@
             "response": []
         },
         {
+            "name": "GetCompletedAuditTrail",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "X-Bulksign-Authentication",
+                        "value": "{{api_email}};{{api_key}}",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "{{path}}/rest/GetCompletedAuditTrail",
+                    "protocol": "{{protocol}}",
+                    "host": [
+                        "{{hostname}}"
+                    ],
+                    "path": [
+                        "{{path}}",
+                        "rest",
+                        "GetCompletedAuditTrail"
+                    ],
+                    "query": [{
+                        "key": "envelopeId",
+                        "value": ""
+                    }]
+                }
+            },
+            "response": []
+        },
+        {
             "name": "SearchDrafts",
             "request": {
                 "method": "POST",
